@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+.box {
+  height: 700px;
+  width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.box .box-back {
+  background: url("../images/illustration-hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  border-radius: 20px 20px 0 0;
+}
+.white-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px 0px 50px;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info h1 {
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  line-height: 25px;
+}
+.p-info {
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--desaturated-blue);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: var(--very-pale-blue);
+  background-size: contain;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.plan .plan-img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+.plan-img {
+  background: url("../images/icon-music.svg");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: -15px;
+}
+.annual {
+  display: flex;
+  flex-direction: column;
+  left: -30px;
+  position: relative;
+}
+.annual h2 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.annual p {
+  color: var(--desaturated-blue);
+}
+.change {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  font-weight: 900;
+  cursor: pointer;
+}
+.change:hover {
+  color: var(--desaturated-blue);
+}
+.confirmation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--bright-blue);
+
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px var(--desaturated-blue);
+  border: none;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+button p {
+  font-size: 15px;
+  color: white;
+  z-index: 99;
+}
+button:hover {
+  background-color: var(--desaturated-blue);
+
+  transition-delay: 0.3s;
+}
+.confirm {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+.confirm:hover {
+  color: var(--bright-blue);
+}
+@media screen and (max-width: 375px) {
+  .box {
+    height: 600px;
+    width: 330px;
+  }
+  .box .box-back {
+    height: 170px;
+  }
+  .white-box {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .info {
+    margin-bottom: 10px;
+  }
+  .info h1 {
+    font-size: 25px;
+  }
+  .p-info p {
+    flex-direction: column;
+    line-height: 25px;
+    font-size: 14.5px;
+  }
+  .plan {
+    height: 80px;
+  }
+  .plan-img {
+    margin: 30px;
+  }
+  .annual h2,
+  p {
+    font-size: 15px;
+    margin: 0;
+  }
+  .change {
+    font-size: 14px;
+    margin: 3px;
+  }
+}
