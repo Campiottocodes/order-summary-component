@@ -10,8 +10,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./)
+![](screenshot-desktop.jpg)
+![](screenshot-mobile.jpg)
 
 ### Links
 
